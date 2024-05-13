@@ -1,0 +1,11 @@
+mutation addCountry($data: NewCountryInput!) {
+  addCountry(data: $data) {
+    code
+    name
+    emoji
+    continent {
+      id
+      name
+    }
+  }
+}
